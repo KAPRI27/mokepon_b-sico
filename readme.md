@@ -49,17 +49,20 @@
     *TIERRA/FUEGO
 
 ### COMBATE
+    //1 Fuego  FUEGO VENCE TIERRA
+    //2 Agua  AGUA VENCE FUEGO
+    //3 Tierra  TIERRA VENCE AGUA
 
+    *AGUA 💧 v/s *TIERRA 🌱 = PERDISTE
+    *AGUA 💧 v/s *FUEGO 🔥= GANASTE
     *AGUA 💧 v/s *AGUA 💧 = EMPATE
-    *AGUA 💧 v/s *TIERRA 🌱 =
-    *AGUA 💧 v/s *FUEGO 🔥
 
 
+    *TIERRA 🌱 v/s *AGUA 💧 = GANASTE
+    *TIERRA 🌱 v/s *FUEGO 🔥 = PERDISTE
     *TIERRA 🌱 v/s *TIERRA 🌱 = EMPATE
-    *TIERRA 🌱 v/s *AGUA 💧 =
-    *TIERRA 🌱 v/s *FUEGO 🔥 =
 
 
+    *FUEGO 🔥 v/s *AGUA 💧 = PERDISTE
+    *FUEGO 🔥 v/s *TIERRA 🌱 = GANASTE
     *FUEGO 🔥 v/s *FUEGO 🔥 = EMPATE
-    *FUEGO 🔥 v/s *AGUA 💧 =
-    *FUEGO 🔥 v/s *TIERRA 🌱 =
