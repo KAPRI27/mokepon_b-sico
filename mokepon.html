@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MOKEPON</title>
+</head>
+<body>
+    <h1>MOKEPON 🌱💧🔥</h1>
+    
+    <section id="seleccionar_mascota">
+        <h2>SELECCIONA TU MASCOTA:</h2>
+
+        <div id="mascotas">
+            <!--HIPODOGUE-->
+            <p><img src="./img/hipodogue.png" alt="" width="50px">
+                <label for="hipodogue">HIPODOGUE
+                <input type="radio" name="mascota" id="hipodogue">
+                </label>
+            </p>
+            <!--CAPIPEPO-->
+            <p><img src="./img/capipepo.png" alt="" width="50px">
+                 <label for="capipepo">CAPIPEPO
+                <input type="radio" name="mascota" id="capipepo">
+                </label>
+            </p>
+            <!--RATIGÜEYA-->
+            <p><img src="./img/ratigüeya.png" alt="" width="50px">
+                <label for="ratigüeya">RATIGÜEYA
+                <input type="radio" name="mascota" id="ratigüeya">
+                </label>
+            </p>
+            
+            <!--NUTRIDELFO-->
+            <p><img src="./img/nutridelfo.png" alt="" width="50px">
+                <label for="nutridelfo">NUTRIDELFO
+                    <input type="radio" name="mascota" id="nutridelfo">
+                </label>
+            </p>
+
+            <!--LANGOSTAROL-->
+            <p><img src="./img/langostarol.png" alt="" width="50px">
+                <label for="langostarol">LANGOSTAROL
+                <input type="radio" name="mascota" id="langostarol">
+                </label>
+            </p>
+            
+            <!--TUCAREAL-->
+            <p><img src="./img/tucareal.png" alt="" width="50px">
+                <label for="tucareal">TUCAREAL
+                <input type="radio" name="mascota" id="tucareal">
+                </label>
+            </p>
+        </div>
+                   
+        <button id="boton-mascota">Seleccionar</button>
+                  
+        </section>
+        
+        <section id="seleccionar_ataque">
+            <h2>SELECCIONA TU ATAQUE:</h2>
+            
+            <p>JUGADOR: <span id="spanMascotaJugador"></span> tiene <strong><span id="vidas-jugador">3</span></strong> vidas</p>
+            <p>ENEMIGO: <span id="spanMascotaEnemigo"> </span>tiene <strong><span id="vidas-enemigo">3</span></strong> vidas</p>
+            
+            
+            <!--botones de ataque-->
+            <p id="botones-ataque">
+                <button id="boton-tierra" class="btn-ataque">Tierra 🌱</button>
+                <button id="boton-agua" class="btn-ataque">Agua 💧</button>
+                <button id="boton-fuego" class="btn-ataque">Fuego 🔥</button>
+            </p>
+        </section>
+        
+        <section id="mensajes">
+        <!--AQUÍ SE DESPLEGARÁ LA INFORMACIÓN DEL JUGADOR, ESTO INCLUYE NOMBRE MASCOTA, ATAQUE ELEGIDO, VIDAS RESTANTES -->
+        <!--EN ESTE SE DESPLEGARÁ LA INFORMACIÓN DEL ENEMIGO, INCLUYE NOMBRE MASCOTA, ATAQUE ELEGIDO, VIDAS RESTANTES -->
+
+
+        <h4>RESULTADO : <span></span></h4>
+        <!--AQUÍ MOSTRAREMOS EL RESULTADO DE LA BATALLA FINALMENTE-->
+            <!--RESULTADO DE LA BATALLA-->
+        </section>
+        
+        <section id="reiniciar">
+            <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+        
+
+
+        <script src="./js/codigojuego.js"></script>
+    </body>
+    </html>
