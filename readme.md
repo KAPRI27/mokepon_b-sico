@@ -8,7 +8,7 @@
 
 
 **MASCOTAS**
-
+**Las imágenes fueron sacadas de Vecteezy, y su autor es __Hafidhul karim__ *
 
 **HIPODOGUE:**
     - Características : Mezcla entre hipopótamo y perro.
@@ -65,4 +65,5 @@
 
     *FUEGO 🔥 v/s *AGUA 💧 = PERDISTE
     *FUEGO 🔥 v/s *TIERRA 🌱 = GANASTE
+
     *FUEGO 🔥 v/s *FUEGO 🔥 = EMPATE
