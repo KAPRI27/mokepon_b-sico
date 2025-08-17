@@ -1,92 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>MOKEPON</title>
-</head>
-<body>
-    <h1>MOKEPON 🌱💧🔥</h1>
-    
-    <section id="seleccionar_mascota">
-        <h2>SELECCIONA TU MASCOTA:</h2>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Federant&family=Girassol&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>MOKEPON</title>
+    </head>
+    <body>
 
-        <div id="mascotas">
-            <!--HIPODOGUE-->
-            <p><img src="./img/hipodogue.png" alt="" width="50px">
-                <label for="hipodogue">HIPODOGUE
-                <input type="radio" name="mascota" id="hipodogue">
-                </label>
-            </p>
-            <!--CAPIPEPO-->
-            <p><img src="./img/capipepo.png" alt="" width="50px">
-                 <label for="capipepo">CAPIPEPO
-                <input type="radio" name="mascota" id="capipepo">
-                </label>
-            </p>
-            <!--RATIGÜEYA-->
-            <p><img src="./img/ratigüeya.png" alt="" width="50px">
-                <label for="ratigüeya">RATIGÜEYA
-                <input type="radio" name="mascota" id="ratigüeya">
-                </label>
-            </p>
-            
-            <!--NUTRIDELFO-->
-            <p><img src="./img/nutridelfo.png" alt="" width="50px">
-                <label for="nutridelfo">NUTRIDELFO
-                    <input type="radio" name="mascota" id="nutridelfo">
-                </label>
-            </p>
+        <header>MOKEPON</header>
+        <h1>🌱💧🔥</h1>
+                                    
+        <section id="seleccionar_mascota">
+            <h2>SELECCIONA TU MASCOTA:</h2>
 
-            <!--LANGOSTAROL-->
-            <p><img src="./img/langostarol.png" alt="" width="50px">
-                <label for="langostarol">LANGOSTAROL
-                <input type="radio" name="mascota" id="langostarol">
-                </label>
-            </p>
+            <div id="mascotas">
+                <div id="mascotas_sencillas">
+                    <!--HIPODOGUE-->
+                    <p class="card_mascota">
+                        <img src="./img/hipodogue.png" alt="" width="100px">
+                        <label for="hipodogue">HIPODOGUE</label>
+                        <input type="radio" name="mascota" id="hipodogue">
+                    </p>
+                    <!--CAPIPEPO-->
+                    <p class="card_mascota"><img src="./img/capipepo.png" alt="" width="100px">
+                        <label for="capipepo">CAPIPEPO</label>
+                        <input type="radio" name="mascota" id="capipepo">
+                        
+                    </p>
+                    <!--RATIGÜEYA-->
+                    <p class="card_mascota"><img src="./img/ratigüeya.png" alt="" width="100px">
+                        <label for="ratigüeya">RATIGÜEYA</label>
+                        <input type="radio" name="mascota" id="ratigüeya">
+                    </p>
+                <!--</div>
+                <div id="mascotas_mixtas"> -->         
+                    <!--LANGOSTAROL-->
+                    <p class="card_mascota"><img src="./img/langostarol.png" alt="" width="100px">
+                        <label for="langostarol">LANGOSTAROL</label>
+                        <input type="radio" name="mascota" id="langostarol">               
+                    </p>
+
+                    <!--AGUIRROPE-->
+                    <p class="card_mascota"><img src="./img/aguirrope.png" alt="" width="100px">
+                            <label for="aguirrope">AGUIRROPE</label>
+                            <input type="radio" name="mascota" id="aguirrope">                
+                    </p>
+                
+                    <!--PANDAROL-->
+                    <p class="card_mascota"><img src="./img/pandarol.png" alt="" width="100px">
+                        <label for="pandarol">PANDAROL</label>
+                        <input type="radio" name="mascota" id="pandarol">                
+                    </p>
+                </div>
+                            
+            </div>
+            <button id="boton_mascota">SELECCIONAR MASCOTA</button>
+        </section>   
+
+
+        <section id="combate__mensajes">
+            <!--SELECCIONA TU ATAQUE-->
+            <div id="seleccionar_ataque">
+                <h2>SELECCIONA TU ATAQUE:</h2>
+                
+                    <p id="jugador">JUGADOR: <span id="spanMascotaJugador"></span> tiene <strong><span id="vidas-jugador">3</span></strong> vidas</p>
+                    <p id="enemigo">ENEMIGO: <span id="spanMascotaEnemigo"> </span> tiene <strong><span id="vidas-enemigo">3</span></strong> vidas</p>
+                
+                
+                <!--botones de ataque-->
+                <p id="botones-ataque" class="botones__ataque">
+                    <button id="boton-tierra" class="btn-ataque">Tierra 🌱</button>
+                    <button id="boton-agua" class="btn-ataque">Agua 💧</button>
+                    <button id="boton-fuego" class="btn-ataque">Fuego 🔥</button>
+                </p>
+            </div>
             
-            <!--TUCAREAL-->
-            <p><img src="./img/tucareal.png" alt="" width="50px">
-                <label for="tucareal">TUCAREAL
-                <input type="radio" name="mascota" id="tucareal">
-                </label>
-            </p>
+            <!--SECCIÓN MENSAJES DE COMBATE-->
+            <div id="mensajes">
+                
+            <!--AQUÍ SE DESPLEGARÁ LA INFORMACIÓN DEL JUGADOR, ESTO INCLUYE NOMBRE MASCOTA, ATAQUE ELEGIDO, VIDAS RESTANTES -->
+            <!--EN ESTE SE DESPLEGARÁ LA INFORMACIÓN DEL ENEMIGO, INCLUYE NOMBRE MASCOTA, ATAQUE ELEGIDO, VIDAS RESTANTES -->
+
+            </div>
+
+            
+        </section>
+        <!--BOTÓN REINICIAR-->
+        <!--SECCIÓN MENSAJE FINAL-->
+        <div id="mensaje-resultado-final" class="mensaje__final">
+                <!--RESULTADO DE LA BATALLA-->
+        
         </div>
-                   
-        <button id="boton-mascota">Seleccionar</button>
-                  
-        </section>
-        
-        <section id="seleccionar_ataque">
-            <h2>SELECCIONA TU ATAQUE:</h2>
-            
-            <p>JUGADOR: <span id="spanMascotaJugador"></span> tiene <strong><span id="vidas-jugador">3</span></strong> vidas</p>
-            <p>ENEMIGO: <span id="spanMascotaEnemigo"> </span>tiene <strong><span id="vidas-enemigo">3</span></strong> vidas</p>
-            
-            
-            <!--botones de ataque-->
-            <p id="botones-ataque">
-                <button id="boton-tierra" class="btn-ataque">Tierra 🌱</button>
-                <button id="boton-agua" class="btn-ataque">Agua 💧</button>
-                <button id="boton-fuego" class="btn-ataque">Fuego 🔥</button>
-            </p>
-        </section>
-        
-        <section id="mensajes">
-        <!--AQUÍ SE DESPLEGARÁ LA INFORMACIÓN DEL JUGADOR, ESTO INCLUYE NOMBRE MASCOTA, ATAQUE ELEGIDO, VIDAS RESTANTES -->
-        <!--EN ESTE SE DESPLEGARÁ LA INFORMACIÓN DEL ENEMIGO, INCLUYE NOMBRE MASCOTA, ATAQUE ELEGIDO, VIDAS RESTANTES -->
-
-
-        <h4>RESULTADO : <span></span></h4>
-        <!--AQUÍ MOSTRAREMOS EL RESULTADO DE LA BATALLA FINALMENTE-->
-            <!--RESULTADO DE LA BATALLA-->
-        </section>
-        
-        <section id="reiniciar">
-            <button id="boton-reiniciar">Reiniciar</button>
-        </section>
+        <div id="reiniciar">
+                <button id="boton-reiniciar" class="btn__reiniciar">REINICIAR JUEGO</button>
+        </div>
         
 
-
+        
         <script src="./js/codigojuego.js"></script>
     </body>
-    </html>
+</html>
